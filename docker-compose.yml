@@ -1,0 +1,6 @@
+﻿services:
+  saesr-predictions-bot:
+    container_name: saesr-predictions-bot
+    build:
+      context: .
+      dockerfile: SAESRPredictionsBot/Dockerfile
