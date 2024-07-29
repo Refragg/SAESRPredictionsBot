@@ -17,6 +17,4 @@ RUN dotnet publish "SAESRPredictionsBot.csproj" -c $BUILD_CONFIGURATION -o /app/
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-COPY /discord-secrets .
-COPY /twitch-secrets .
 ENTRYPOINT ["dotnet", "SAESRPredictionsBot.dll"]

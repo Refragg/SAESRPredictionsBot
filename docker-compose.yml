@@ -4,3 +4,5 @@
     build:
       context: .
       dockerfile: SAESRPredictionsBot/Dockerfile
+    volumes:
+      - ./config:/config
